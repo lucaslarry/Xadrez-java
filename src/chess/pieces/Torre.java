@@ -4,17 +4,16 @@ import boardgame.Board;
 import chess.ChessPiece;
 import chess.Color;
 
-public class King extends ChessPiece {
-
-    public King(Board board, Color color) {
+public class Torre extends ChessPiece {
+    public Torre(Board board, Color color) {
         super(board, color);
     }
 
     @Override
     public String toString() {
         if (this.getColor() == Color.BRANCO){
-            return "♚";
+            return "♜";
         }
-        return "♔";
+        return "♖";
     }
 }
