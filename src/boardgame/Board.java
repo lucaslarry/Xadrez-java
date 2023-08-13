@@ -26,14 +26,14 @@ public class Board {
 
     public Piece piece(int row, int column) {
         if (!positionExists(row,column)){
-            throw new BoardException("Essa posiçao não existe no tabuleiro");
+            throw new BoardException("Essa posição não existe no tabuleiro");
         }
         return pieces[row][column];
     }
 
     public Piece piece(Position position) {
         if (!positionExists(position)){
-            throw new BoardException("Essa posiçao não existe no tabuleiro");
+            throw new BoardException("Essa posição não existe no tabuleiro");
         }
         return pieces[position.getRow()][position.getColumn()];
     }
@@ -56,7 +56,7 @@ public class Board {
 
     public boolean theresIsAPiece(Position position){
         if (!positionExists(position)){
-            throw new BoardException("Essa posiçao não existe no tabuleiro");
+            throw new BoardException("Essa posição não existe no tabuleiro");
         }
         return piece(position) !=null;
     }

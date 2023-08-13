@@ -21,40 +21,44 @@ public class ChessMatch {
         return mat;
 
     }
-    private void inicialSetup(){
-        board.placePiece(new Torre(board, Color.BRANCO), new Position(0,0));
-        board.placePiece(new Torre(board, Color.BRANCO), new Position(0,7));
-        board.placePiece(new Rei(board, Color.BRANCO), new Position(0,4));
-        board.placePiece(new Rainha(board, Color.BRANCO), new Position(0,3));
-        board.placePiece(new Cavalo(board, Color.BRANCO), new Position(0,1));
-        board.placePiece(new Cavalo(board, Color.BRANCO), new Position(0,6));
-        board.placePiece(new Bispo(board, Color.BRANCO), new Position(0,2));
-        board.placePiece(new Bispo(board, Color.BRANCO), new Position(0,5));
-        board.placePiece(new Peao(board, Color.BRANCO), new Position(1,0));
-        board.placePiece(new Peao(board, Color.BRANCO), new Position(1,1));
-        board.placePiece(new Peao(board, Color.BRANCO), new Position(1,2));
-        board.placePiece(new Peao(board, Color.BRANCO), new Position(1,3));
-        board.placePiece(new Peao(board, Color.BRANCO), new Position(1,4));
-        board.placePiece(new Peao(board, Color.BRANCO), new Position(1,5));
-        board.placePiece(new Peao(board, Color.BRANCO), new Position(1,6));
-        board.placePiece(new Peao(board, Color.BRANCO), new Position(1,7));
 
-        board.placePiece(new Torre(board, Color.PRETO), new Position(7,0));
-        board.placePiece(new Torre(board, Color.PRETO), new Position(7,7));
-        board.placePiece(new Rei(board, Color.PRETO), new Position(7,4));
-        board.placePiece(new Rainha(board, Color.PRETO), new Position(7,3));
-        board.placePiece(new Cavalo(board, Color.PRETO), new Position(7,1));
-        board.placePiece(new Cavalo(board, Color.PRETO), new Position(7,6));
-        board.placePiece(new Bispo(board, Color.PRETO), new Position(7,2));
-        board.placePiece(new Bispo(board, Color.PRETO), new Position(7,5));
-        board.placePiece(new Peao(board, Color.PRETO), new Position(6,0));
-        board.placePiece(new Peao(board, Color.PRETO), new Position(6,1));
-        board.placePiece(new Peao(board, Color.PRETO), new Position(6,2));
-        board.placePiece(new Peao(board, Color.PRETO), new Position(6,3));
-        board.placePiece(new Peao(board, Color.PRETO), new Position(6,4));
-        board.placePiece(new Peao(board, Color.PRETO), new Position(6,5));
-        board.placePiece(new Peao(board, Color.PRETO), new Position(6,6));
-        board.placePiece(new Peao(board, Color.PRETO), new Position(6,7));
+    private void placeNewPiece(char column,int row, ChessPiece piece){
+        board.placePiece(piece, new ChessPosition(column,row).toPosition());
+    }
+    private void inicialSetup(){
+        placeNewPiece('a', 1,new Torre(board, Color.BRANCO));
+        placeNewPiece('h',1,new Torre(board, Color.BRANCO));
+        placeNewPiece('e',1,new Rei(board, Color.BRANCO));
+        placeNewPiece('d',1,new Rainha(board, Color.BRANCO));
+        placeNewPiece('b',1,new Cavalo(board, Color.BRANCO));
+        placeNewPiece('g',1,new Cavalo(board, Color.BRANCO));
+        placeNewPiece('c',1,new Bispo(board, Color.BRANCO));
+        placeNewPiece('f',1,new Bispo(board, Color.BRANCO));
+        placeNewPiece('a',2,new Peao(board, Color.BRANCO));
+        placeNewPiece('b',2,new Peao(board, Color.BRANCO));
+        placeNewPiece('c',2,new Peao(board, Color.BRANCO));
+        placeNewPiece('d',2,new Peao(board, Color.BRANCO));
+        placeNewPiece('e',2,new Peao(board, Color.BRANCO));
+        placeNewPiece('f',2,new Peao(board, Color.BRANCO));
+        placeNewPiece('g',2,new Peao(board, Color.BRANCO));
+        placeNewPiece('h',2,new Peao(board, Color.BRANCO));
+
+        placeNewPiece('a',8,new Torre(board, Color.PRETO));
+        placeNewPiece('h',8,new Torre(board, Color.PRETO));
+        placeNewPiece('e',8,new Rei(board, Color.PRETO));
+        placeNewPiece('d',8,new Rainha(board, Color.PRETO));
+        placeNewPiece('b',8,new Cavalo(board, Color.PRETO));
+        placeNewPiece('g',8,new Cavalo(board, Color.PRETO));
+        placeNewPiece('c',8,new Bispo(board, Color.PRETO));
+        placeNewPiece('f',8,new Bispo(board, Color.PRETO));
+        placeNewPiece('a',7,new Peao(board, Color.PRETO));
+        placeNewPiece('b',7,new Peao(board, Color.PRETO));
+        placeNewPiece('c',7,new Peao(board, Color.PRETO));
+        placeNewPiece('d',7,new Peao(board, Color.PRETO));
+        placeNewPiece('e',7,new Peao(board, Color.PRETO));
+        placeNewPiece('f',7,new Peao(board, Color.PRETO));
+        placeNewPiece('g',7,new Peao(board, Color.PRETO));
+        placeNewPiece('h',7,new Peao(board, Color.PRETO));
 
 
     }
