@@ -17,4 +17,9 @@ public class Rainha extends ChessPiece {
         }
         return "♕";
     }
+
+    @Override
+    public boolean[][] possibleMoves() {
+        return new boolean[0][];
+    }
 }

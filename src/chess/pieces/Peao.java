@@ -16,4 +16,9 @@ public class Peao extends ChessPiece {
         }
         return "♙";
     }
+
+    @Override
+    public boolean[][] possibleMoves() {
+        return new boolean[0][];
+    }
 }
