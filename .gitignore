@@ -3,10 +3,12 @@
 
 # Diretório de saída de compilação
 /bin/
+/out/
 
 # Arquivos de configuração IDE
 .idea/
 .vscode/
+
 
 # Arquivos de compilação
 build/
