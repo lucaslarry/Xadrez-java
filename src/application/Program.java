@@ -20,6 +20,9 @@ public class Program {
                 System.out.println("");
                 System.out.print("Peça que deseja mexer: ");
                 ChessPosition source = UI.readChessPosition(sc);
+                boolean[][] possibleMoves = chessMatch.possibleMoves(source);
+                UI.clearScreen();
+                UI.printBoard(chessMatch.getPieces(), possibleMoves);
                 System.out.println("");
                 System.out.print("Lugar que a peça deve ir: ");
                 ChessPosition target = UI.readChessPosition(sc);
