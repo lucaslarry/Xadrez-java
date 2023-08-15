@@ -1,0 +1,16 @@
+# Arquivos compilados
+*.class
+
+# Diretório de saída de compilação
+/bin/
+
+# Arquivos de configuração IDE
+.idea/
+.vscode/
+
+# Arquivos de compilação
+build/
+dist/
+target/
+
+
