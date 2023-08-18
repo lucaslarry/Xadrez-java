@@ -12,10 +12,7 @@ public class Torre extends ChessPiece {
 
     @Override
     public String toString() {
-        if (this.getColor() == Color.BRANCO){
-            return "♜";
-        }
-        return "♖";
+        return "R";
     }
 
     @Override

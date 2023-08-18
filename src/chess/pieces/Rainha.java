@@ -12,10 +12,7 @@ public class Rainha extends ChessPiece {
 
     @Override
     public String toString() {
-        if (this.getColor() == Color.BRANCO){
-            return "♛";
-        }
-        return "♕";
+        return "Q";
     }
 
     @Override

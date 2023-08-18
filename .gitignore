@@ -1,10 +1,11 @@
 # Arquivos compilados
 *.class
+*.iml
 
 # Diretório de saída de compilação
 /bin/
 /out/
-
+/.idea/
 # Arquivos de configuração IDE
 .idea/
 .vscode/
