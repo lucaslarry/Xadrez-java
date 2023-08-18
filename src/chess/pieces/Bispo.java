@@ -6,6 +6,7 @@ import chess.ChessPiece;
 import chess.Color;
 
 public class Bispo extends ChessPiece {
+
     public Bispo(Board board, Color color) {
         super(board, color);
     }
